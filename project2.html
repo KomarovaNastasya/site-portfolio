@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"><link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style.css">
+    <title>Настасья | Портфолио</title>
+    
+</head>
+<body id="main">
+
+<header class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">НК</a</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">Обо мне</a></li>
+                <li><a href="index.html#projects">Проекты</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div>
+		<div class="navigation">
+			<div class="navbar">
+				<a href="project1.html"><div><h3>< Предыдущий проект</h3></div></a>
+				<a href="project3.html"><div><h3>Следующий проект > </h3></div></a>
+			</div>
+        </div>
+    </div>
+    <div class="container" id="about">
+	<h1 class="project-header">Серия векторных иллюстраций для бренда</h1>
+        <div class="gallery-section">
+            <div class="photo-grid nonsquare">
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-01.svg" alt="">
+                </div>
+                <div class="grid-item text-grid">
+                    <p>Данный проект является большой частью проетка по созданию бренда. Заключается в создании серии векторных иллюстраций с разработанными маскотами бренда и их взаимодействием с различными предметами, в основном связанными со школой.</p>
+					<p><b> Год создания:</b>  2024-2025</p>
+					<p><b> Использованные программы:</b> Adobe Illustrator</p>
+                </div>
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-02.svg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-03.svg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-04.svg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-05.svg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-06.svg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="src/svg/ill-pj2-07.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <div class="footer-nav">
+                    <a href="index.html#main">Главная</a>
+                    <a href="index.html#about">Обо мне</a>
+                    <a href="index.html#projects">Проекты</a>
+                    <a href="index.html#contacts">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Проекты</h4>
+                <div class="footer-nav">
+                    <a href="project1.html">Бренд</a>
+                    <a href="project2.html">Иллюстрации</a>
+                    <a href="project3.html">Обложки</a>
+                    <a href="project4.html">Посты</a>
+                    <a href="project5.html">Портреты</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p><a href="mailto:komarova.k.nastasya@gmail.com">komarova.k.nastasya@gmail.com</a></p>
+                <p>tg: <a href="https://t.me/thwowi">@thwowi</a></p>
+            </div>
+            <div class="footer-col" style="width:10%">
+                <img src="src/svg/heart.svg"></img>
+            </div>
+        </div>
+        <div class="copyright">
+            Настасья Комарова · Сайт-портфолио · 2026 
+        </div>
+    </div>
+</footer>
+
+<button id="scrollToTopBtn" class="scroll-to-top" aria-label="Наверх">
+    ↑
+</button>
+
+<script>
+const scrollBtn = document.getElementById('scrollToTopBtn');
+
+window.addEventListener('scroll', () => {
+if (window.scrollY > 300) {
+	scrollBtn.classList.add('show');
+} else {
+	scrollBtn.classList.remove('show');
+}
+});
+
+scrollBtn.addEventListener('click', () => {
+window.scrollTo({
+	top: 0,
+	behavior: 'smooth'
+});
+});
+</script>
+</body>
+</html>
